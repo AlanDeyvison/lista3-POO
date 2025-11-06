@@ -45,7 +45,7 @@ public class Ranking {
     public void save() throws IOException {
         File file = new File(ARQUIVO);
 
-        // CORREÇÃO: Garantir que o arquivo existe antes de salvar
+
         if(!file.exists()){
             file.createNewFile();
         }
