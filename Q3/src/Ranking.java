@@ -95,7 +95,7 @@ public class Ranking {
         }
     }
 
-    private void ordenar(){
+    private void ordenar(){ //privado pq só é usado aqui dentro
         rank.sort((a, b) -> Integer.compare(b.getVitorias(), a.getVitorias()));
     }
 
@@ -108,7 +108,7 @@ public class Ranking {
         return false;
     }
 
-    public Player buscarJogador(String nome) {//buscar o jogador pelo nome
+   /* public Player buscarJogador(String nome) {//buscar o jogador pelo nome
         for (Player p : rank) {
             if (p.getUser().equalsIgnoreCase(nome)) {
                 return p;
@@ -116,6 +116,9 @@ public class Ranking {
         }
         return null;
     }
+
+    //não precisei usar
+    */
 
 }
 
